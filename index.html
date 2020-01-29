@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DPARADIG - Strange Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       <enunciated class="sup">
+           <h1>Strange Counter</h1>
+           <h3>
+            Programa de solución al problema "Strange Counter" de Hackerrank.com para  DPARADIG.
+            </h3>
+            <a target="_blank" href="https://www.hackerrank.com/challenges/strange-code/problem">Ver en Hacckerrank.com</a>
+       </enunciated>
+    </header>
+    <article>
+
+        <section class="problem">
+            
+            <description class="problemDes" >
+                <p >
+                    Bob has a strange counter. At the first second, it displays the number 3. Each second, the number displayed by the counter decrements by 1 until it reaches 1.
+                    The counter counts down in cycles. In next second, the timer resets to 2 x the initial number for the prior cycle and continues counting down. The diagram below shows the counter values for each time t in the first three cycles:
+                    <br><br>
+                    Find and print the value displayed by the counter at time t.
+            </description>
+            <imgContainer class="imgSample">
+                <img src="https://s3.amazonaws.com/hr-challenge-images/22185/1469447349-bae87a5071-strange1.png" alt="Image Sample">
+            </imgContainer>
+            <description class="problemDes">
+                    <h3>Function Description</h3>
+                    Complete the strangeCounter function in the editor below. It should return the integer value displayed by the counter at time . strangeCounter has the following parameter(s):
+                    <br>  t: an integer
+                    <h3>Input Format</h3>
+                    A single integer denoting the value of t.
+                    <h3>Constraints</h3>
+                    1 <= t <= 10^12
+                    <h3>Subtask</h3>
+                    1 <= t <= 10^5 for 60% of the maximum score.
+                    <h3>Output Format</h3>
+                    Print the value displayed by the strange counter at the given time t.
+                    <h3>Sample Input</h3>
+                    4
+                    <h3>Sample Output</h3>
+                    6
+                    <h3>Explanation</h3>
+                    Time t = 4 marks the beginning of the second cycle. It is double the number displayed at the beginning of the first cycle:.
+                    <br>
+                    2x3 = 6. This is also shown in the diagram in the Problem Statement above.
+                </p>
+            </description>
+            
+        </section>
+
+        <section class="solution">
+            <div class="title">
+                <h1> PROBLEM SOLUTION </h1>
+            </div>
+            <div class="data">
+                <label for=""> Initial: </label>
+                <input type="number" value="3" id="init" readonly=true >
+                <label for=""> Factor: </label>
+                <input type="number" value="2" id="factor" readonly=true >
+                <br>
+            </div>
+            <div class="actions">
+                <div class="time">
+                    <label for="">Time (t): </label>
+                    <br>
+                    <input type="number" value="22" id="tNumber" min="0" max="1000000000000">
+                    <br>
+                    <span id="invalidNumber" hidden="true">Insert a number between 1 and 10^12</span>
+                    <br>
+                </div>
+                <div class="button">
+                    <button type="submit" id="calcNumber">GO!</button>
+                    <br>
+                </div>
+                <label for="" id="timeValue"></label>
+            </div>
+        </section>
+    </article>
+    <footer>
+        <div class="developed">
+            <h2>Developed by</h2>
+        </div>
+        <div class="name">
+            <h1>Henry D'Santiago</h1> 
+        </div>
+        <div class="date">
+            <p>28 / 01 / 2020</p>
+        </div>
+    </footer>
+</body>
+<script src="strangeCode.js"></script>
+</html>
+

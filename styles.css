@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+header{
+    margin: 5px;
+    padding: 10px;
+    background-color: rgb(143, 152, 194);
+    text-align: center;
+}
+
+header h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+header h3 {
+    padding-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(3, 4, 11);
+}
+
+header a{
+    padding-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color:  rgb(210, 215, 252);
+    text-decoration: none;
+}
+
+article{
+    margin: 0px 50px 20px 50px;
+    padding: 0px 50px;
+    font-size: small;
+    display: flex;
+}
+
+article .problem {
+    padding:10px;
+    background-color:rgb(210, 215, 252);
+    font-size: 14px;
+    display: flex;
+    border: 20px;
+    border-radius: 20px;
+}
+
+.imgSample{
+    margin-left: 20px;
+    background-color: white;
+    padding: 5px 20px;
+    float: right;
+}
+
+.problemDes{
+    padding: 0px 20px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+article .solution {
+    margin-left: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-width: 250px;
+    padding: 15px 10px;
+    background-color: rgb(53, 247, 82);
+    border: 20px;
+    border-radius: 20px;
+}
+
+section .title{
+    padding: 5px;
+    margin-bottom: 10px;
+    min-width: 90%;
+    background-color: rgb(143, 152, 194);
+    border: 20px;
+    border-radius: 20px;
+    
+}
+
+.solution h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.solution .data{
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 10px;
+    min-width: 90%;
+    background-color: rgb(210, 215, 252);
+    text-align: center;
+
+}
+.solution .data label{
+    margin: 0 0 0 15px;
+}
+
+.solution .data input{
+    max-width: 2em;
+    text-align: center;
+}
+
+
+.solution .actions {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.solution .time{
+    margin-top: 10px;
+}
+
+.solution .actions input{
+    text-align: right;
+    min-width: 180px;
+    font-size: 20px;
+}
+
+#invalidNumber{
+    font-size: 14px;
+    color: red;
+}
+
+.actions button {
+    min-width: 100px;
+    min-height: 30px;
+    background-color:rgb(143, 152, 194);
+    color: #ffffff;
+    font-size: 20px;
+    margin:  3px 0 20px 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8px;
+    background-color: none;
+    align-items: center;
+}
+
+footer .developed{
+    margin: 3px;
+    display: flex;
+    background-color: none;
+    font-style: italic;
+}
+
+footer .name{
+    font-style: italic;
+    font-size: 12px;
+    display: flex;
+    background-color: none;
+}
+
+footer .date{
+    display: flex;
+    background-color: none;
+    font-size: 12px;
+}
